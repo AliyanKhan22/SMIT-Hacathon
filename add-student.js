@@ -66,7 +66,7 @@ window.submit = () => {
       setDoc(ref, obj)
         .then(() => {
           console.log("Student and marks data added: ", obj);
-           window.location.href = "Admain main.html"; 
+           window.location.href = "Admain.html"; 
         })
         .catch((dbErr) => {
           console.error("Error adding student data: ", dbErr);

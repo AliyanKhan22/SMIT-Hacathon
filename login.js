@@ -22,7 +22,7 @@ document.getElementById('loginForm').addEventListener('submit', (e) => {
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             alert('Login successful!');
-            window.location.href = '../Student/edit-profile.html'; 
+            window.location.href = 'edit-profile.html'; 
         })
         .catch((error) => {
             alert(`Error: ${error.message}`);
@@ -33,5 +33,5 @@ document.getElementById('editForm').addEventListener('submit', (e) => {
     e.preventDefault();
     
     alert('Form submitted successfully!');
-    window.location.href = '../Student/student-dashboard.html';
+    window.location.href = 'student-dashboard.html';
 });

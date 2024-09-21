@@ -36,7 +36,7 @@ onAuthStateChanged(auth, async (user) => {
             alert('Student data not found.');
         }
     } else {
-        window.location.href = '../login.html';
+        window.location.href = 'login.html';
     }
 });
 
@@ -67,7 +67,7 @@ document.getElementById('editProfileForm').addEventListener('submit', async (e) 
             // Logout the user
             await signOut(auth);
             // Redirect to student dashboard
-            window.location.href = '../Student/student-dashboard.html';
+            window.location.href = 'student-dashboard.html';
         });
     } else {
         alert('Student data not found.');
