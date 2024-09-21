@@ -21,7 +21,7 @@
         </div>
 
         <div class="section"></div>
-            <a href="../Admin/Admain main.html" class="btn">Back To Main Pge</a>
+            <a href="../index.html" class="btn">Back To Main Pge</a>
         </div>
     </div>
 
@@ -30,12 +30,10 @@
 
         const auth = getAuth();
 
-        // Check if user is logged in
         onAuthStateChanged(auth, (user) => {
             if (!user) {
-                // If no user is logged in, redirect to login page
                 alert("Please log in to access the Edit Profile section.");
-                window.location.href = "../login.html"; // Redirect to login
+                window.location.href = "../login.html"; 
             }
         });
     </script>
