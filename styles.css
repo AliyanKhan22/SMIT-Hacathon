@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6d49a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#first{
+    font-weight: bold;
+    color: #007BFF;
+    text-shadow: 1px 1px 1px black;
+    font-size: 35px;
+}
+.first a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.student-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 20px auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+#addStudentForm,#uploadMarksForm,#loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+a.btn {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+    color: #555;
+}
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 13px 13px 18px #007bff;
+    margin-top: 40px;
+    border-radius: 120px;
+}

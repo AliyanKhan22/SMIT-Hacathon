@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="student-container">
+        <h2>Welcome to the Student Dashboard</h2>
+        <p>Select an option:</p>
+
+        <div class="section">
+           
+            <a href="edit-profile.html" class="btn" id="editProfileLink">Edit Profile</a>
+        </div>
+
+        <div class="section">
+            <a href="check-result.html" class="btn">Check Result</a>
+        </div>
+
+        <div class="section"></div>
+            <a href="../Admin/Admain main.html" class="btn">Back To Main Pge</a>
+        </div>
+    </div>
+
+    <script type="module">
+        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js";
+
+        const auth = getAuth();
+
+        // Check if user is logged in
+        onAuthStateChanged(auth, (user) => {
+            if (!user) {
+                // If no user is logged in, redirect to login page
+                alert("Please log in to access the Edit Profile section.");
+                window.location.href = "../login.html"; // Redirect to login
+            }
+        });
+    </script>
+</body>
+</html>
